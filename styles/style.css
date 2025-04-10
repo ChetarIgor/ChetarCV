@@ -1,0 +1,254 @@
+body{
+    margin: 0; /* Elimina márgenes que vienen predeterminados */
+    font-family: Arial, sans-serif; /* Estilo de fuente que usare para todo */
+    background-color: #4e5869;
+    height: 100%; /* Ocupa toda la altura de la ventana */
+    justify-content: center;
+    align-items: center;
+}
+
+.foto {
+    margin-top: 40px;
+    justify-content: center;
+    align-content: center;
+    display: flex; /* Flexbox para alineación */
+}
+
+.fotoDePerfil{
+    margin: 10px;
+    background-image: url(../img/CesarFOTOCV.jpeg);
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el espacio */
+    padding: 90px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    text-align: center; /* Centrado de texto interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor */
+    transition: box-shadow 0.3s ease; /* Suaviza cambios de sombra */
+}
+
+.fotoDePerfil:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+.info, .info2 {
+    margin: 5% auto;
+    width: 70%;
+    height: 50%;
+    background-color: #164e7c;
+    padding: 20px;
+    border-radius: 15px;  
+}
+
+.info .titulo {
+    color: #082641;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 3px rgb(9, 55, 99) dashed;
+}
+
+.info .nombreCompleto {
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.nombreCompleto:active {
+    transform: scale(1.1);
+  }
+
+.info .carrera {
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: large;
+    
+}
+
+.info .direccion {
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: large;
+    
+}
+
+.info .contacto {
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: large;
+    
+}
+
+.info .numero {
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.info2 .descripcion {
+    color: #082641;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 3px rgb(9, 55, 99) dashed;
+}
+
+.info2 .infoDescripcion {
+    color: aliceblue;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: normal;
+}
+
+.PF {
+    color: #082641;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    margin: 12px;
+}
+
+.PF {
+    position: relative; /* Necesario para que el pseudo elemento se posicione correctamente */
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    margin: 12px;
+    color: #082641;
+}
+
+.PF::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -5px; /* Ajuste para colocarlo justo abajo del texto */
+    left: 0;
+    background-color: #082641; /* Color de la línea */
+    transform: scaleX(0); /* Comienza invisible */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out; /* Animación de aparición */
+}
+
+.PF:hover::after {
+    transform: scaleX(1); /* La línea se expande cuando pasas el mouse */
+    transform-origin: bottom left; /* Cambia el origen de la expansión */
+}
+
+.datosPF {
+    background-color: #082641;
+    color:white;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    border-radius: 15px;
+}
+
+.datosPF:active {
+    background-color: #0d3c6b;
+}
+
+.datosPF:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.datosPF:hover {
+    color:rgb(253, 254, 255);
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+.expLaboral {
+    color: #082641;
+    font-size: xx-large;
+    text-align: left;
+    font-weight: bolder;
+    margin-right: 20px;
+    
+}
+
+.expLaboralInfo {
+    color: aliceblue;
+    font-size: xx-large ;
+    text-align: left;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+.educacion {
+    color: #082641;
+    font-size: xx-large;
+    text-align: left;
+    font-weight: bolder;
+    margin-right: 20px;
+    
+}
+
+.educacionInfo {
+    color: aliceblue;
+    font-size: xx-large ;
+    text-align: left;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+.habilidades {
+    color: #082641;
+    font-size: xx-large;
+    text-align: left;
+    font-weight: bolder;
+    margin-right: 20px;
+    
+}
+
+.habilidadesInfo {
+    color: aliceblue;
+    font-size: xx-large ;
+    text-align: left;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+.referencias {
+    color: #082641;
+    font-size: xx-large;
+    text-align: left;
+    font-weight: bolder;
+    margin-right: 20px;
+    
+}
+
+.referenciasInfo {
+    color: aliceblue;
+    font-size: xx-large ;
+    text-align: left;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+/* Configuración responsiva para pantallas pequeñas */
+@media(max-width:768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    aside{
+        order:3;
+    }
+}
